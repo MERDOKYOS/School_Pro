@@ -1,13 +1,15 @@
 *{
-  background-color:rebeccapurple;
+  background-color:rgb(134, 119, 150);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .list{
+    
   display: flex;
   padding: 10px;
+
 }
 
 li{
