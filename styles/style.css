@@ -1,22 +1,39 @@
 *{
-  background-color:rgb(134, 119, 150);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.logo{
+  display: flex;
+  margin: 5px;
+  margin-right: auto;
+  color: #fff7e6;;
+  
+}
 
+.nav{
+  background-color: #1b5c9a;
+}
+
+.nav-link{
+  background-color: #1b5c9a;
+  color: #fff7e6;
+}
 .nav-link:hover {
-      color: rgb(43, 112, 110);
+      color: #c5b797;
       font-weight: bold;
-      cursor: pointer; /* Optional: changes cursor on hover */
-      margin: 3px;
+      cursor: pointer; 
     }
 
 .hero-section {
-  background: #8c7a9b;
+  background: #658c93;
   min-height: 450px;
   overflow: hidden;
+}
+
+.btn{
+  background-color: #3b5b8a;
 }
 
 .hero-img {
@@ -27,12 +44,22 @@
 }
 
 .curve {
+  margin-top: 10px;
   position: absolute;
-  bottom: -1px;
+  bottom: 0; 
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 90px; 
   background: #fff;
   border-top-left-radius: 100% 90px;
   border-top-right-radius: 100% 90px;
+  overflow: hidden;
+}
+
+.event-container{
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  background-color: #1b5c9a;
+  color: white;
 }
