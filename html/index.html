@@ -14,10 +14,8 @@
       href="../bootstrap-5.3.8-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     <title>Document</title>
   </head>
   <body>
@@ -58,9 +56,9 @@
     <div class="event-container">
       <h4>Upcoming Events:</h4>
     </div>
-
+ 
     <!-- The resource  -->
-    <h1 id="reso" style="text-align: center">Courses</h1>
+    <h1 id="reso" style="text-align: center;padding-top: 50px;">Courses</h1>
     <div class="container my-4">
       <div class="row justify-content-center g-4">
         <!-- Grade 9 -->
@@ -152,81 +150,98 @@
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="mission-box">
-        <h3 class="fw-bold"><i class="bi bi-eye"></i> Our Vision</h3>
-        <p class="mt-3">
-          To become a leading educational institution in Ethiopia that inspires innovation, 
-          academic excellence, and lifelong learning.
-        </p>
-      </div>
+    <!-- Contact section -->
+
+    <h1 id="con" style="text-align: center; padding-top: 50px;">Contact Us</h1>
+
+ <div class="container my-5">
+    <div class="row contact-wrapper">
+
+        <!-- LEFT: GET IN TOUCH -->
+        <div class="col-lg-5 p-4 contact-left">
+            <h4 class="fw-bold mb-3">Get in touch</h4>
+            <p class="text-muted">We are ready to provide the right solution according to your needs.</p>
+
+            <div class="mb-3 d-flex">
+                <i class="bi bi-geo-alt fs-3 me-3 text-primary"></i>
+                <div>
+                    <h6 class="fw-bold mb-1">Head Office</h6>
+                    <p class="mb-0">........ Highschool</p>
+                </div>
+            </div>
+
+            <div class="mb-3 d-flex">
+                <i class="bi bi-envelope fs-3 me-3 text-primary"></i>
+                <div>
+                    <h6 class="fw-bold mb-1">Email Us</h6>
+                    <p class="mb-0">support@yoursite.com</p>
+                </div>
+            </div>
+
+            <div class="mb-3 d-flex">
+                <i class="bi bi-telephone fs-3 me-3 text-primary"></i>
+                <div>
+                    <h6 class="fw-bold mb-1">Call Us</h6>
+                    <p class="mb-0">+6221-2020-2012</p>
+                </div>
+            </div>
+<h6 class="fw-bold mt-4">Follow us</h6>
+
+<div class="follow-us">
+  <a href="https://facebook.com" target="_blank">
+    <i class="bi bi-facebook fs-3"></i>
+  </a>
+
+  <a href="https://instagram.com" target="_blank">
+    <i class="bi bi-instagram fs-3"></i>
+  </a>
+
+  <a href="https://twitter.com" target="_blank">
+    <i class="bi bi-twitter fs-3"></i>
+  </a>
+
+  <a href="https://t.me/yourusername" target="_blank">
+    <i class="bi bi-telegram fs-3"></i>
+  </a>
+</div>
+
+
+
+        </div>
+
+        <!-- RIGHT: FORM -->
+        <div class="col-lg-7 p-4 contact-right">
+            <h4 class="fw-bold mb-3">Send us a message</h4>
+
+            <form id="contactForm">
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-2">
+                        <input type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <input type="text" class="form-control" placeholder="Grade">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-2">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                </div>
+
+                <input type="text" class="form-control mb-3" placeholder="Subject">
+
+                <textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
+
+                <button class="btn btn-primary w-100" type="submit">Send</button>
+            </form>
+        </div>
+
     </div>
-
-  </div>
-</section>
-
-<!-- HISTORY -->
-<section class="container py-4">
-  <h2 class="fw-bold text-center mb-4">Our History</h2>
-  <p class="text-center mx-auto" style="max-width: 750px;">
-    Established in <b>1993</b>, our school has grown from a small institution serving the 
-    local community into a respected academic center recognized for strong discipline, 
-    excellent performance, and modern learning practices. Over the years, we have introduced 
-    digital education tools, active student clubs, and improved teaching methodologies.
-  </p>
-</section>
-
-<!-- UNIQUE FEATURES -->
-<section class="container py-5">
-  <h2 class="fw-bold text-center mb-4">What Makes Us Unique</h2>
-
-  <div class="row g-4 text-center">
-
-    <div class="col-md-3">
-      <i class="bi bi-book-fill feature-icon"></i>
-      <h5 class="fw-bold mt-2">Strong Academics</h5>
-    </div>
-
-    <div class="col-md-3">
-      <i class="bi bi-laptop feature-icon"></i>
-      <h5 class="fw-bold mt-2">Tech-Enhanced Learning</h5>
-    </div>
-
-    <div class="col-md-3">
-      <i class="bi bi-people-fill feature-icon"></i>
-      <h5 class="fw-bold mt-2">Active Student Clubs</h5>
-    </div>
-
-    <div class="col-md-3">
-      <i class="bi bi-shield-check feature-icon"></i>
-      <h5 class="fw-bold mt-2">Safe Environment</h5>
-    </div>
-
-  </div>
-</section>
-
-<!-- PRINCIPAL MESSAGE -->
-<section class="container py-5">
-  <h2 class="fw-bold text-center mb-4">Message From the Principal</h2>
-
-  <div class="text-center">
-    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" 
-         alt="Principal"
-         class="principal-img">
-
-    <p class="mx-auto" style="max-width: 700px;">
-      "At our school, we believe education is a journey of curiosity, discipline, and growth. 
-      Every student deserves an environment that supports their potential and shapes them 
-      into confident future leaders."
-    </p>
-
-    <h5 class="fw-bold mt-3">— ABIME SETI</h5>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="text-center py-3" style="background:#1446A0; color:white;">
-  © 2025 MEABI • All Rights Reserved
-</footer>
+</div>
+ 
   </body>
 </html>
