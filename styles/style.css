@@ -5,6 +5,29 @@
   color: black;
 }
 
+#reso{
+  padding-top: 50px;
+}
+
+.logo{
+  display: flex;
+  padding: 11px;
+  margin: 5px;
+  margin-right: auto;
+  color: #fff7e6;
+  
+}
+
+.nav{
+  background-color: #52677b;
+}
+
+.nav-link{
+  background-color: #52677b;
+  color: #fff7e6;
+  padding: 11px;
+}
+
 .logo{
   display: flex;
   margin: 5px;
@@ -13,29 +36,6 @@
   
 }
 
-.nav{
-  background-color: #1b5c9a;
-}
-
-.nav-link{
-  background-color: #1b5c9a;
-  color: #fff7e6;
-}.logo{
-  display: flex;
-  margin: 5px;
-  margin-right: auto;
-  color: #fff7e6;;
-  
-}
-
-.nav{
-  background-color: #1b5c9a;
-}
-
-.nav-link{
-  background-color: #1b5c9a;
-  color: #fff7e6;
-}
 .nav-link:hover {
       color: #c5b797;
       font-weight: bold;
@@ -53,10 +53,14 @@
 }
 
 .btn{
-  background-color: #3b5b8a;
   padding: 10px;
-  background-color: #e6e1e1;
-  color: black;
+  background-color: #52677b;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.btn:hover{
+  background-color: #3f4f5e;
 }
 
 .hero-img {
@@ -64,6 +68,10 @@
   height: 320px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.goo{
+  padding-top: 20px;
 }
 
 .curve {
@@ -80,9 +88,52 @@
 }
 
 .event-container{
+  margin-left: 3px;
+  margin-top: 8px;
   display: flex;
-  padding: 30px;
+  padding: 33px;
   align-items: center;
-  background-color: #1b5c9a;
-  color: white;
+  background-color: #eae9e9;
+  border-radius: 10px;
+  color: black;
+  border: rgb(244, 232, 232) solid 1px;
+  border-top: 6px solid #1446A0;
 }
+
+
+.hero-section {
+      padding: 120px 20px;
+      background: linear-gradient(to bottom right, #acc4f0, #9bbee1);
+      color: white;
+      text-align: center;
+    }
+
+    /* .hero-section img {
+      max-width: 200px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 3px solid white;
+    } */
+
+    /* Mission / Vision */
+    .mission-box {
+      background: #F5F7FA;
+      border-radius: 15px;
+      padding: 30px;
+      height: 100%;
+      border-left: 6px solid #1446A0;
+    }
+
+    /* Unique Points */
+    .feature-icon {
+      font-size: 40px;
+      color: #1446A0;
+    }
+
+    /* Principal */
+    .principal-img {
+      width: 140px;
+      border-radius: 50%;
+      border: 4px solid #1446A0;
+      margin-bottom: 15px;
+    }
