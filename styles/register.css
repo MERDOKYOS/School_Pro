@@ -28,12 +28,18 @@
   align-items: center;
 }
 
-img{
-  width: 24px;
-  height: 24px;
-  border: #041b29 solid 1px;
-  border-radius: 5px;
-  padding: 5px;
+.social-icons i {
+    font-size: 24px;
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    background-color: #333;
+    color: white;
 }
 
 input{
@@ -74,7 +80,7 @@ input{
   border-radius: 70px 0 0 70px;
   align-items: center;
   justify-content: center;
-  padding: 50px 50px;
+  padding: 70px 70px;
 }
 
 .log{
