@@ -18,7 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -339,51 +339,7 @@
     </div>
     <!-- FOOTER -->
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results & AI Assistant</title>
-
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    /* AI Chatbox styling */
-    #chatBox {
-      height: 350px;
-      background: #f8f9fa;
-      overflow-y: auto;
-      border: 1px solid #dee2e6;
-      border-radius: 10px;
-      padding: 10px;
-    }
-    .message-user {
-      font-weight: 600;
-      margin-top: 10px;
-    }
-    .message-ai {
-      color: #0d6efd;
-      margin-bottom: 10px;
-    }
-
-    /* Upload box */
-    .upload-box {
-      border: 2px dashed #adb5bd;
-      border-radius: 10px;
-      padding: 30px;
-      text-align: center;
-      transition: 0.3s;
-    }
-    .upload-box:hover {
-      background: #f1f3f5;
-      border-color: #0d6efd;
-    }
-  </style>
-</head>
-
-<body class="bg-light">
 
   <div class="container py-5">
 
@@ -481,28 +437,9 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Simple AI message mockup -->
-  <script>
-    function sendMessage() {
-      let box = document.getElementById("chatBox");
-      let input = document.getElementById("userInput");
-
-      if (input.value.trim() === "") return;
-
-      box.innerHTML += `<p class='message-user'>You: ${input.value}</p>`;
-      box.innerHTML += `<p class='message-ai'>AI: Thinking... (connect backend here)</p>`;
-
-      input.value = "";
-      box.scrollTop = box.scrollHeight;
-    }
-  </script>
-
-</body>
-</html>
-
     <footer class="text-center py-3" style="background: #52677b; color: white">
       © 2025 MEABI • All Rights Reserved
     </footer>
-
+  <script type="text/javascript" src="../script/script.js"> </script>
   </body>
 </html>
