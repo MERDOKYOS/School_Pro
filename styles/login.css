@@ -1,0 +1,95 @@
+.form_box{
+    width: 700px;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fefcfc;
+}
+
+.social-icons i {
+    font-size: 24px;
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    background-color: #333;
+    color: white;
+}
+.texticon{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.left{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#3da9c7;
+    border-radius: 0 75px 75px 0;
+    padding: 70px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f2f2;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.right{
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+   
+
+}
+
+#registerbtn{
+   
+    padding: 10px 50px;
+     background-color: #3da9c7;
+     border-radius: 20px;
+     border: 1px solid white;
+}
+
+.loginbtn{
+    
+    background: linear-gradient(45deg, #041b29, rgb(6, 183, 196));
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+
+}
+
+@media (max-width: 700px) {
+  .form_box {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+#p1{
+    margin-top: 0;
+}
+
+
+
