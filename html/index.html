@@ -338,8 +338,171 @@
       </div>
     </div>
     <!-- FOOTER -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results & AI Assistant</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* AI Chatbox styling */
+    #chatBox {
+      height: 350px;
+      background: #f8f9fa;
+      overflow-y: auto;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .message-user {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .message-ai {
+      color: #0d6efd;
+      margin-bottom: 10px;
+    }
+
+    /* Upload box */
+    .upload-box {
+      border: 2px dashed #adb5bd;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .upload-box:hover {
+      background: #f1f3f5;
+      border-color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+
+    <h2 class="fw-bold mb-4">Results & AI Assistant</h2>
+
+    <div class="row g-4">
+
+      <!-- LEFT: Results + Upload -->
+      <div class="col-lg-8">
+
+        <!-- Results Card -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-3">Your Results</h5>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 bg-primary text-white rounded">Math: <span class="fw-bold">89%</span></div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-success text-white rounded">Physics: <span class="fw-bold">92%</span></div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-warning text-dark rounded">Biology: <span class="fw-bold">88%</span></div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">Amharic: <span class="fw-bold">85%</span></div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">Chemistry: <span class="fw-bold">85%</span></div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">Civics: <span class="fw-bold">85%</span></div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">Geography: <span class="fw-bold">85%</span></div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">HISTORY: <span class="fw-bold">85%</span></div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">Apptitude: <span class="fw-bold">85%</span></div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-info text-white rounded">HPE: <span class="fw-bold">85%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload Assessments -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-3">Upload Assessments & Worksheets</h5>
+
+            <div class="upload-box">
+              <input type="file" id="fileInput" class="d-none">
+              <label for="fileInput" class="fw-semibold text-primary" style="cursor:pointer;">
+                Click to upload or drag & drop files
+              </label>
+              <p class="text-muted small mt-2">PDF, DOCX, PNG, JPG allowed</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: AI CHAT PANEL -->
+      <div class="col-lg-4">
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-3">Ask AI for Help</h5>
+
+            <div id="chatBox">
+              <p class="message-ai">AI: Hello! Ask me anything related to your subjects.</p>
+            </div>
+
+            <div class="input-group mt-3">
+              <input id="userInput" type="text" class="form-control" placeholder="Type your question...">
+              <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Simple AI message mockup -->
+  <script>
+    function sendMessage() {
+      let box = document.getElementById("chatBox");
+      let input = document.getElementById("userInput");
+
+      if (input.value.trim() === "") return;
+
+      box.innerHTML += `<p class='message-user'>You: ${input.value}</p>`;
+      box.innerHTML += `<p class='message-ai'>AI: Thinking... (connect backend here)</p>`;
+
+      input.value = "";
+      box.scrollTop = box.scrollHeight;
+    }
+  </script>
+
+</body>
+</html>
+
     <footer class="text-center py-3" style="background: #52677b; color: white">
       © 2025 MEABI • All Rights Reserved
     </footer>
+
   </body>
 </html>
