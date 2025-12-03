@@ -1,6 +1,5 @@
 body {
-  /* font-family: 'Oswald', sans-serif; */
-  /* font-weight: 400;  */
+  font-family: 'Oswald', sans-serif;
 }
 
 .form-box{
@@ -14,7 +13,7 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  background-color: #fefcfc;
+  background-color: #fff9f9;
 
 }
 
@@ -23,6 +22,18 @@ body {
     width: 90%;
     flex-direction: column;
   }
+  .wel{
+    padding-left: 10px;
+  }
+
+  .log{
+    margin-bottom: 10px;
+  }
+
+  .right h1{
+    font-size: 25px;
+  }
+
 }
 
 
@@ -45,13 +56,15 @@ img{
 }
 
 input{
+  display: block;
+  line-height: normal;
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #f5f2f2;
+  background-color: #ebe9e9;
   color: #333;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 
 .btn{
@@ -78,6 +91,7 @@ input{
   width: 50%;
   display: flex;
   flex-direction: column;
+  gap:0px;
   background-color: #3da9c7;
   border-radius: 70px 0 0 70px;
   align-items: center;
@@ -89,10 +103,16 @@ input{
 
 .log{
   padding: 8px 28px;
+  margin-top: 5px;
   color: white;
   border: 1px solid white;
   border-radius: 30px;
   background-color: #3da9c7;;
+}
+
+.right h1, 
+.right p {
+  margin: 5px 0;
 }
 
 h2,.bottom{
