@@ -1,3 +1,8 @@
+body {
+  /* font-family: 'Oswald', sans-serif; */
+  /* font-weight: 400;  */
+}
+
 .form-box{
   width: 700px;
   min-height: 400px;
@@ -24,8 +29,11 @@
 /* left side */
 
 .left{
+  display: flex;
+  flex-direction: column;
   width: 50%;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .social-icons i {
@@ -49,7 +57,7 @@ input{
   border-radius: 5px;
   background-color: #f5f2f2;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .btn{
@@ -80,6 +88,9 @@ input{
   border-radius: 70px 0 0 70px;
   align-items: center;
   justify-content: center;
+  align-self: stretch;
+  /* padding: 50px 50px; */
+  margin: 0 auto;
   padding: 70px 70px;
 }
 
@@ -91,7 +102,7 @@ input{
   background-color: #3da9c7;;
 }
 
-h3,.bottom{
+h2,.bottom{
   display: flex;
   flex-direction: column;
   align-items: center;
